@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">PadcAssignment3</string>
+    <string name="str_nav_home">Home</string>
+    <string name="str_nav_search">Search</string>
+    <string name="str_nav_calender">Calender</string>
+    <string name="str_nav_bookmark">Bookmark</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_txt_location">Location</string>
+    <string name="str_btn_filter">Filters</string>
+    <string name="str_txt_checkin">Check In</string>
+    <string name="str_txt_checkout">Check out</string>
+    <string name="str_txt_count">Count</string>
+    <string name="txt_str_room">Rooms</string>
+    <string name="str_btn_search_now">Search now</string>
+    <string name="str_txt_top_search">TOP SEARCHS</string>
+    <string name="str_txt_recent">RECENT SEARCH</string>
+    <string name="str_txt_cancle">Cancle</string>
+    <string name="str_txt_filter">Filter</string>
+    <string name="str_txt_reset">Reset</string>
+    <string name="str_txt_sortby">SORT BY</string>
+    <string name="str_txt_rating">RATING</string>
+    <string name="str_chip_none">None</string>
+    <string name="str_txt_price_range">PRICE RANGE</string>
+    <string name="str_btn_filter_now">Filter Now</string>
+    <string name="str_txt_price">price</string>
+
+    <string-array name="spinner_item">
+        <item>Yangon</item>
+        <item>Mandalay</item>
+        <item>TaungGyi</item>
+        <item>Nay Pyi Taw</item>
+        <item>MawlaMyine</item>
+    </string-array>
+
+    <string-array name="autocompletetext_array">
+        <item>100$</item>
+        <item>200$</item>
+        <item>300$</item>
+        <item>400$</item>
+    </string-array>
+</resources>
