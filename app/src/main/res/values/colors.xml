@@ -5,7 +5,8 @@
     <color name="statusTransparent">#26646363</color>
     <color name="colorAccent">#D81B60</color>
     <color name="color_violent">#603D9E</color>
-    <color name="color_gray">#464545</color>
+    <color name="color_gray">#E7E6E6</color>
+    <color name="color_gray_search">#F8F5F5</color>
     <color name="bg_main">#F3F1F1</color>
     <color name="color_black">#000000</color>
     <color name="color_pink">#E91E63</color>

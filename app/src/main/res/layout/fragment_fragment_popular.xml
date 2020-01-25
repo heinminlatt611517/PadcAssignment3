@@ -1,415 +1,418 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbars="none"
-    >
-
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:scrollbars="none"-->
+<!--    >-->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginBottom="8dp"
+    android:background="@color/color_gray"
         tools:context=".fragments.FragmentNearBy">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_one"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                app:cardCornerRadius="20dp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/hotelone" />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/ic_bookmark_foreground"/>
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cornerRadius="5dp"
-                    android:backgroundTint="@color/color_violent"
-                    android:text="$99/day"
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="bottom|right"/>
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cv_one"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
 
-                <RatingBar
-                    android:id="@+id/rating"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_gravity="bottom|start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:numStars="1"
-                    android:rating="1"
-                    android:stepSize="1"
-                    android:layout_margin="20dp"
-                    android:theme="@style/RatingBar"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/hotelone" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:src="@drawable/ic_bookmark_foreground"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    android:backgroundTint="@color/color_violent"-->
+<!--                    android:text="$99/day"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_gravity="bottom|right"/>-->
 
-                <TextView
-                    android:id="@+id/txt_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|start"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginBottom="20dp"/>
+<!--                <RatingBar-->
+<!--                    android:id="@+id/rating"-->
+<!--                    style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:numStars="1"-->
+<!--                    android:rating="1"-->
+<!--                    android:stepSize="1"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    android:theme="@style/RatingBar"-->
+<!--                    />-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_rating"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:layout_marginBottom="20dp"/>-->
 
-            <TextView
-                android:id="@+id/txt_one"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Hotel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cv_one" />
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
-            <TextView
-                android:id="@+id/txt_two"
-                style="@style/TextAppearance.MaterialComponents.Subtitle2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Mandalay , Myanmar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_one" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_one"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Hotel"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cv_one" />-->
 
-            <TextView
-                android:id="@+id/txt_three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="GET 50% OFF"
-                android:textColor="@color/color_pink"
-                android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/cv_one"
-                app:layout_constraintTop_toTopOf="@+id/txt_one" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_two"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Mandalay , Myanmar"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_one" />-->
 
-            <TextView
-                android:id="@+id/txt_four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free wifi and Swimming"
-                app:layout_constraintEnd_toEndOf="@+id/txt_three"
-                app:layout_constraintTop_toBottomOf="@+id/txt_three"
-                app:layout_constraintTop_toTopOf="@+id/txt_two" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_three"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="GET 50% OFF"-->
+<!--                android:textColor="@color/color_pink"-->
+<!--                android:textSize="12dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/cv_one"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_one" />-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:orientation="vertical">
+<!--            <TextView-->
+<!--                android:id="@+id/txt_four"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Free wifi and Swimming"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_three"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_three"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_two" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_two"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                app:cardCornerRadius="20dp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/hotelthree" />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/ic_bookmark_foreground"/>
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cornerRadius="5dp"
-                    android:backgroundTint="@color/color_violent"
-                    android:text="$99/day"
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="bottom|right"/>
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cv_two"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
 
-                <RatingBar
-                    android:id="@+id/rating1"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_gravity="bottom|start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:numStars="1"
-                    android:rating="1"
-                    android:stepSize="1"
-                    android:layout_margin="20dp"
-                    android:theme="@style/RatingBar"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/hotelthree" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:src="@drawable/ic_bookmark_foreground"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    android:backgroundTint="@color/color_violent"-->
+<!--                    android:text="$99/day"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_gravity="bottom|right"/>-->
 
-                <TextView
-                    android:id="@+id/txt1_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|start"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginBottom="20dp"/>
+<!--                <RatingBar-->
+<!--                    android:id="@+id/rating1"-->
+<!--                    style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:numStars="1"-->
+<!--                    android:rating="1"-->
+<!--                    android:stepSize="1"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    android:theme="@style/RatingBar"-->
+<!--                    />-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--                <TextView-->
+<!--                    android:id="@+id/txt1_rating"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:layout_marginBottom="20dp"/>-->
 
-            <TextView
-                android:id="@+id/txt_five"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Hotel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cv_two" />
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
-            <TextView
-                android:id="@+id/txt_six"
-                style="@style/TextAppearance.MaterialComponents.Subtitle2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Mandalay , Myanmar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_five" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_five"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Hotel"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cv_two" />-->
 
-            <TextView
-                android:id="@+id/txt_seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="GET 50% OFF"
-                android:textColor="@color/color_pink"
-                android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/cv_two"
-                app:layout_constraintTop_toTopOf="@+id/txt_five" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_six"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Mandalay , Myanmar"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_five" />-->
 
-            <TextView
-                android:id="@+id/txt_eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free wifi and Swimming"
-                app:layout_constraintEnd_toEndOf="@+id/txt_seven"
-                app:layout_constraintTop_toBottomOf="@+id/txt_seven"
-                app:layout_constraintTop_toTopOf="@+id/txt_six" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_seven"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="GET 50% OFF"-->
+<!--                android:textColor="@color/color_pink"-->
+<!--                android:textSize="12dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/cv_two"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_five" />-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:orientation="vertical">
+<!--            <TextView-->
+<!--                android:id="@+id/txt_eight"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Free wifi and Swimming"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_seven"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_seven"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_six" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_three"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                app:cardCornerRadius="20dp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/hotelfive" />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/ic_bookmark_foreground"/>
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cornerRadius="5dp"
-                    android:backgroundTint="@color/color_violent"
-                    android:text="$99/day"
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="bottom|right"/>
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cv_three"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
 
-                <RatingBar
-                    android:id="@+id/rating2"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_gravity="bottom|start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:numStars="1"
-                    android:rating="1"
-                    android:stepSize="1"
-                    android:layout_margin="20dp"
-                    android:theme="@style/RatingBar"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/hotelfive" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:src="@drawable/ic_bookmark_foreground"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    android:backgroundTint="@color/color_violent"-->
+<!--                    android:text="$99/day"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_gravity="bottom|right"/>-->
 
-                <TextView
-                    android:id="@+id/txt2_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|start"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginBottom="20dp"/>
+<!--                <RatingBar-->
+<!--                    android:id="@+id/rating2"-->
+<!--                    style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:numStars="1"-->
+<!--                    android:rating="1"-->
+<!--                    android:stepSize="1"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    android:theme="@style/RatingBar"-->
+<!--                    />-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--                <TextView-->
+<!--                    android:id="@+id/txt2_rating"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:layout_marginBottom="20dp"/>-->
 
-            <TextView
-                android:id="@+id/txt_next_one"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Hotel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cv_three" />
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
-            <TextView
-                android:id="@+id/txt_next_two"
-                style="@style/TextAppearance.MaterialComponents.Subtitle2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Mandalay , Myanmar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_next_one" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_next_one"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Hotel"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cv_three" />-->
 
-            <TextView
-                android:id="@+id/txt_next_three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="GET 50% OFF"
-                android:textColor="@color/color_pink"
-                android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/cv_three"
-                app:layout_constraintTop_toTopOf="@+id/txt_next_one" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_next_two"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Mandalay , Myanmar"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_next_one" />-->
 
-            <TextView
-                android:id="@+id/txt_next_four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free wifi and Swimming"
-                app:layout_constraintEnd_toEndOf="@+id/txt_next_three"
-                app:layout_constraintTop_toBottomOf="@+id/txt_next_three"
-                app:layout_constraintTop_toTopOf="@+id/txt_next_two" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_next_three"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="GET 50% OFF"-->
+<!--                android:textColor="@color/color_pink"-->
+<!--                android:textSize="12dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/cv_three"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_next_one" />-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:orientation="vertical">
+<!--            <TextView-->
+<!--                android:id="@+id/txt_next_four"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Free wifi and Swimming"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_next_three"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_next_three"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_next_two" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_four"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                app:cardCornerRadius="20dp"
-                app:cardUseCompatPadding="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/hotelfour" />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/ic_bookmark_foreground"/>
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cv_four"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="180dp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
 
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cornerRadius="5dp"
-                    android:backgroundTint="@color/color_violent"
-                    android:text="$99/day"
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="bottom|right"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/hotelfour" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:src="@drawable/ic_bookmark_foreground"/>-->
 
-                <RatingBar
-                    android:id="@+id/rating3"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_gravity="bottom|start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:numStars="1"
-                    android:rating="1"
-                    android:stepSize="1"
-                    android:layout_margin="20dp"
-                    android:theme="@style/RatingBar"
-                    />
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    android:backgroundTint="@color/color_violent"-->
+<!--                    android:text="$99/day"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_gravity="bottom|right"/>-->
 
-                <TextView
-                    android:id="@+id/txt3_rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|start"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginBottom="20dp"/>
-            </com.google.android.material.card.MaterialCardView>
+<!--                <RatingBar-->
+<!--                    android:id="@+id/rating3"-->
+<!--                    style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:numStars="1"-->
+<!--                    android:rating="1"-->
+<!--                    android:stepSize="1"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    android:theme="@style/RatingBar"-->
+<!--                    />-->
 
-            <TextView
-                android:id="@+id/txtOne"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Hotel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cv_four" />
+<!--                <TextView-->
+<!--                    android:id="@+id/txt3_rating"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom|start"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:layout_marginBottom="20dp"/>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
 
-            <TextView
-                android:id="@+id/txtTwo"
-                style="@style/TextAppearance.MaterialComponents.Subtitle2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:text="Mandalay , Myanmar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtOne" />
+<!--            <TextView-->
+<!--                android:id="@+id/txtOne"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Hotel"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cv_four" />-->
 
-            <TextView
-                android:id="@+id/txtThree"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="GET 50% OFF"
-                android:textColor="@color/color_pink"
-                android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/cv_four"
-                app:layout_constraintTop_toTopOf="@+id/txtOne" />
+<!--            <TextView-->
+<!--                android:id="@+id/txtTwo"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Subtitle2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:text="Mandalay , Myanmar"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txtOne" />-->
 
-            <TextView
-                android:id="@+id/txtFour"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free wifi and Swimming"
-                app:layout_constraintEnd_toEndOf="@+id/txtThree"
-                app:layout_constraintTop_toBottomOf="@+id/txtThree"
-                app:layout_constraintTop_toTopOf="@+id/txtTwo" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/txtThree"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="GET 50% OFF"-->
+<!--                android:textColor="@color/color_pink"-->
+<!--                android:textSize="12dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/cv_four"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txtOne" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtFour"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Free wifi and Swimming"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txtThree"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txtThree"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txtTwo" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
     </LinearLayout>
-</ScrollView>

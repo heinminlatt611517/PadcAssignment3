@@ -6,11 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.heinminlatt.padcassignment3.R
+import com.heinminlatt.padcassignment3.adapter.AdapterNearBy
+import com.heinminlatt.padcassignment3.adapter.AdapterPopular
 import kotlinx.android.synthetic.main.bottom_sheet.*
 import kotlinx.android.synthetic.main.bottom_sheet.txt_rating
 import kotlinx.android.synthetic.main.fragment_fragment_near_by.*
+import kotlinx.android.synthetic.main.fragment_fragment_popular.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -45,10 +49,11 @@ class FragmentPopular : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        txt_rating.setText(rating.rating.toString())
-        txt1_rating.setText(rating.rating.toString())
-        txt2_rating.setText(rating.rating.toString())
-        txt3_rating.setText(rating.rating.toString())
+        val adapter= AdapterPopular()
+        val linearLayoutManager= LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
+        rec_popular.layoutManager=linearLayoutManager
+        rec_popular.adapter=adapter
+
     }
 
     companion object {

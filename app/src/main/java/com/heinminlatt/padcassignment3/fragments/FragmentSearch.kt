@@ -10,13 +10,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.heinminlatt.padcassignment3.Constants
 
 import com.heinminlatt.padcassignment3.R
+import com.heinminlatt.padcassignment3.adapter.AdapterPopular
+import com.heinminlatt.padcassignment3.adapter.AdapterRecentSearch
+import com.heinminlatt.padcassignment3.adapter.AdapterTopSearch
 import kotlinx.android.synthetic.main.bottom_sheet.*
 import kotlinx.android.synthetic.main.bottom_sheet.txt_rating
 import kotlinx.android.synthetic.main.fragment_fragment_near_by.*
+import kotlinx.android.synthetic.main.fragment_fragment_popular.*
 import kotlinx.android.synthetic.main.fragment_fragment_search.*
 import kotlinx.android.synthetic.main.recent_hotel_items.*
 import java.text.SimpleDateFormat
@@ -66,16 +71,19 @@ class FragmentSearch : Fragment() {
         edt_checkIn.inputType=InputType.TYPE_NULL
 
 
-        txt_rating.setText(rating.rating.toString())
-        txt1_rating.setText(rating.rating.toString())
-        txt2_rating.setText(rating.rating.toString())
-        txt3_rating.setText(rating.rating.toString())
+
+        val adapter= AdapterTopSearch()
+        val linearLayoutManager= LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
+        rec_top_search.layoutManager=linearLayoutManager
+        rec_top_search.adapter=adapter
+
+        val adapter1= AdapterRecentSearch()
+        val linearLayoutManager1= LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
+        rec_recent.layoutManager=linearLayoutManager1
+        rec_recent.adapter=adapter1
 
 
-        rtxt_rating.setText(rrating.rating.toString())
-        rtxt1_rating.setText(rrating.rating.toString())
-
-        btn_search.setOnClickListener{
+        btn1.setOnClickListener{
 
             val bottomSheetDialogFragment=BottomSheetFragment()
             activity?.supportFragmentManager?.let { it1 -> bottomSheetDialogFragment.show(it1,bottomSheetDialogFragment.tag)

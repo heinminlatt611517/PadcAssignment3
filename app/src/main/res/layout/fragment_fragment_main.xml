@@ -9,7 +9,7 @@
     android:layout_height="wrap_content"
     android:elevation="0dp"
     app:elevation="0dp"
-    android:background="@android:color/white"
+    android:background="@color/color_gray"
     android:id="@+id/app_bar">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             app:tabMode="fixed"
-            android:background="@android:color/white"
+            android:background="@color/color_gray"
             app:backgroundTint="@android:color/transparent"
             app:tabIndicatorColor="@android:color/transparent"
             app:tabTextAppearance="@style/CustomTextAppearanceTab"
