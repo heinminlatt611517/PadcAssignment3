@@ -11,6 +11,7 @@ MERGED from [androidx.core:core-ktx:1.1.0] /Users/nawzarchilinn/.gradle/caches/t
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/c4ef5ca596413fc5b60e6754465386ae/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/807e3f1d8a4640489d6f757b6903dd8e/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/7d7d3baeae3607244b3faa1988d82e61/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/3de59756151d5b5cd2f38e2c0e258ff1/glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d4ebfc95be76e9dc300d9100ccb9dfcd/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/dd5fc5a099aef28a67f93df4446647ae/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/564388c32085138c359dac6cb7f3f8e1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -33,6 +34,8 @@ MERGED from [androidx.core:core:1.1.0] /Users/nawzarchilinn/.gradle/caches/trans
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/6de075386d20be281a87dfa1b2d6ac45/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/27bc33bc5e89f584b9b261dfc907e0db/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/0e903dd799d54019ded37d0684a014d4/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/73aea4854122d1054b8bb306d2093eb9/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9391fdbedb6374aa1914c6e28bb2f8c7/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d83fe64bffd2c3a18b5121db5e3cda89/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9444e3cf77d3306ef4a80ba458253a45/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9233c21f8ab497c46d13c1cb3bad199c/print-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -67,10 +70,14 @@ MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/nawzarch
 MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/22dd91b8d78ebd2640149192405a5680/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/c4ef5ca596413fc5b60e6754465386ae/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/c4ef5ca596413fc5b60e6754465386ae/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/3de59756151d5b5cd2f38e2c0e258ff1/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/3de59756151d5b5cd2f38e2c0e258ff1/glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/563be99a7f8ba6717b67ce50a8a4b6a6/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/563be99a7f8ba6717b67ce50a8a4b6a6/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/0e903dd799d54019ded37d0684a014d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/0e903dd799d54019ded37d0684a014d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/73aea4854122d1054b8bb306d2093eb9/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/73aea4854122d1054b8bb306d2093eb9/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/563be99a7f8ba6717b67ce50a8a4b6a6/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -117,6 +124,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nawzarchilinn/.grad
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/807e3f1d8a4640489d6f757b6903dd8e/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/7d7d3baeae3607244b3faa1988d82e61/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/7d7d3baeae3607244b3faa1988d82e61/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/3de59756151d5b5cd2f38e2c0e258ff1/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/3de59756151d5b5cd2f38e2c0e258ff1/glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d4ebfc95be76e9dc300d9100ccb9dfcd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d4ebfc95be76e9dc300d9100ccb9dfcd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/dd5fc5a099aef28a67f93df4446647ae/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -161,6 +170,10 @@ MERGED from [androidx.cardview:cardview:1.0.0] /Users/nawzarchilinn/.gradle/cach
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/27bc33bc5e89f584b9b261dfc907e0db/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/0e903dd799d54019ded37d0684a014d4/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/0e903dd799d54019ded37d0684a014d4/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/73aea4854122d1054b8bb306d2093eb9/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/73aea4854122d1054b8bb306d2093eb9/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9391fdbedb6374aa1914c6e28bb2f8c7/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9391fdbedb6374aa1914c6e28bb2f8c7/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d83fe64bffd2c3a18b5121db5e3cda89/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/d83fe64bffd2c3a18b5121db5e3cda89/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nawzarchilinn/.gradle/caches/transforms-2/files-2.1/9444e3cf77d3306ef4a80ba458253a45/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
